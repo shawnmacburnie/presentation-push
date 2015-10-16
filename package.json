@@ -1,6 +1,6 @@
 {
   "name": "presentation-push",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "presentation-push is a node CLI tool that will push code behind the scene to a Github repo so you don't have to worry about it while you present.",
   "main": "index.js",
   "scripts": {
