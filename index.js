@@ -2,6 +2,7 @@
 
 'use strict';
 var pwd = process.cwd(),
+	workingDirString = '--git-dir=' + pwd + '/.git --work-tree=' + pwd,
     argv = process.argv,
     runTime = false,
     exec = require('child_process').exec;
@@ -17,7 +18,7 @@ if (argv.length > 2) {
 }
 if (runTime) {
     setInterval(function () {
-        exec('git status',function (error, stdout){
+        exec('git ' + workingDirString + ' status',function (error, stdout){
         	if(error) {
         		return console.log(error);
         	}
