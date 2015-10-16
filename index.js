@@ -10,7 +10,7 @@ var pwd = process.cwd(),
         .exec;
 if (argv.length > 2) {
     if (argv[2] === 'time' && argv.length > 3) {
-        if (argv.length === 4) {
+        if (argv.length === 5) {
             commitMessage = true;
         }
         runTime = true;
