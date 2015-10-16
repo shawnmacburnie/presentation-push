@@ -1,0 +1,23 @@
+{
+  "name": "presentation-push",
+  "version": "1.0.0",
+  "description": "presentation-push is a node CLI tool that will push code behind the scene to a Github repo so you don't have to worry about it while you present.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sookool99/presentation-push.git"
+  },
+  "keywords": [
+    "presentation",
+    "git"
+  ],
+  "author": "Shawn Macburnie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sookool99/presentation-push/issues"
+  },
+  "homepage": "https://github.com/sookool99/presentation-push#readme"
+}
