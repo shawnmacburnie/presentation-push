@@ -4,14 +4,18 @@
 var pwd = process.cwd(),
     workingDirString = '--git-dir=' + pwd + '/.git --work-tree=' + pwd,
     argv = process.argv,
-    runTime = false,
+    runTime = true,
     commitMessage = false,
+    defaultTime = 5,
     exec = require('child_process')
         .exec;
 if (argv.length > 2) {
-    if (argv[2] === 'time' && argv.length > 3) {
-        if (argv.length === 5) {
-            commitMessage = true;
+    if (argv[2] === 'time') {
+        if (argv.length > 3) {
+            defaultTime = parseInt(argv[3]);
+            if (argv.length === 5) {
+                commitMessage = true;
+            }
         }
         runTime = true;
     } else if (argv[2] === 'change') {
@@ -51,7 +55,8 @@ function pushChanges() {
     });
 }
 if (runTime) {
-    setInterval(pushChanges, parseInt(argv[3]));
+    console.log('Running Timed commits every ' + defaultTime + ' minutes.');
+    setInterval(pushChanges, defaultTime);
 } else {
     console.log('File Change Feature not yet added.');
 }
