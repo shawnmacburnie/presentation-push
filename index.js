@@ -6,7 +6,7 @@ var pwd = process.cwd(),
     argv = process.argv,
     runTime = true,
     commitMessage = false,
-    defaultTime = 0.1,
+    defaultTime = 5,
     exec = require('child_process')
         .exec;
 if (argv.length > 2) {
