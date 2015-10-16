@@ -15,7 +15,7 @@ if (argv.length > 2) {
         }
         runTime = true;
     } else if (argv[2] === 'change') {
-        if (argv.length === 3) {
+        if (argv.length === 4) {
             commitMessage = true;
         }
         runTime = false;
