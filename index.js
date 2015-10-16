@@ -26,7 +26,7 @@ function pushChanges() {
         exec('git ' + workingDirString + ' commit -m "testCommit"',
             function (error2) {
                 if (error2) {
-                    return console.log(error2);
+                    return;
                 }
                 exec('git ' + workingDirString + ' push', function (error3) {
                     if (error3) {
