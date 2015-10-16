@@ -19,6 +19,7 @@ if (argv.length > 2) {
 }
 
 function pushChanges() {
+	
     exec('git ' + workingDirString + ' add -A', function (error, stdout) {
         if (error) {
             return console.log(error);
