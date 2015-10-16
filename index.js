@@ -6,7 +6,7 @@ var pwd = process.cwd(),
     argv = process.argv,
     runTime = true,
     commitMessage = false,
-    defaultTime = 5,
+    defaultTime = 0.1,
     exec = require('child_process')
         .exec;
 if (argv.length > 2) {
@@ -56,7 +56,7 @@ function pushChanges() {
 }
 if (runTime) {
     console.log('Running Timed commits every ' + defaultTime + ' minutes.');
-    setInterval(pushChanges, defaultTime);
+    setInterval(pushChanges, defaultTime * 60000);
 } else {
     console.log('File Change Feature not yet added.');
 }
