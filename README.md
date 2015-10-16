@@ -8,6 +8,7 @@ npm i -g presentation-push
 
 
 ## Usage
+NOTE: You must call this CLI from a working github repo, and you must have also set your upstream to where you want it to go so that the `git push` commands works.
 ```
 presentation-push type duration commit
 ```
