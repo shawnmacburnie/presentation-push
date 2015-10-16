@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/sookool99/presentation-push/issues"
   },
-  "homepage": "https://github.com/sookool99/presentation-push#readme"
+  "homepage": "https://github.com/sookool99/presentation-push#readme",
+  "bin": "./index.js"
 }
